@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<!--<p>hello</p>-->
+<!--&lt;!&ndash;//点击按钮会覆盖该文档&ndash;&gt;-->
+<!--<button onclick="writeWorld()">按钮</button>-->
+
+<!--<script>-->
+
+<!--function writeWorld() {-->
+<!--document.write("world")-->
+<!--}-->
+
+<!--</script>-->
+
+<!--css-->
+
+<!--<div id="did" class="div">hello</div>-->
+
+<!--<button onclick="demo()">更改颜色</button>-->
+
+<!--<script>-->
+
+<!--function demo() {-->
+
+<!--document.getElementById("did").style.background = "green";-->
+
+<!--}-->
+
+
+<!--</script>-->
+
+<button id="btn">按钮</button>
+
+<script>
+
+    var v = document.getElementById("btn");
+    v.addEventListener("click", hello);//添加句柄
+    v.removeEventListener("click", hello);
+
+    function hello() {
+        alert("hello")
+    }
+
+
+</script>
+
+</body>
+</html>
