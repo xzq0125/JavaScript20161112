@@ -18,18 +18,20 @@
 <script>
 
     function getLoc() {
-        var hostname = window.location.hostname;
-        var pathname = window.location.pathname;
-        var port = window.location.port;
-        var protocol = window.location.protocol;
-        var href = window.location.href;
+        var hostname = window.location.hostname;//主机名
+        var pathname = window.location.pathname;//路劲
+        var port = window.location.port;//端口
+        var protocol = window.location.protocol;//协议
+        var href = window.location.href;//url
 
         document.getElementById("hostname").innerHTML = hostname;
         document.getElementById("pathname").innerHTML = pathname;
         document.getElementById("port").innerHTML = port;
         document.getElementById("protocol").innerHTML = protocol;
         document.getElementById("href").innerHTML = href;
-        location.assign("http://www.mazing.com")
+
+        //分配链接
+        //location.assign("http://www.mazing.com")
 
     }
 
