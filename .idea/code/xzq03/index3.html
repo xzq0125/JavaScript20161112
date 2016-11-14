@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<button onclick="getLoc()">按钮</button>
+
+<p id="hostname"></p>
+<p id="pathname"></p>
+<p id="port"></p>
+<p id="protocol"></p>
+<p id="href"></p>
+
+<script>
+
+    function getLoc() {
+        var hostname = window.location.hostname;
+        var pathname = window.location.pathname;
+        var port = window.location.port;
+        var protocol = window.location.protocol;
+        var href = window.location.href;
+
+        document.getElementById("hostname").innerHTML = hostname;
+        document.getElementById("pathname").innerHTML = pathname;
+        document.getElementById("port").innerHTML = port;
+        document.getElementById("protocol").innerHTML = protocol;
+        document.getElementById("href").innerHTML = href;
+        location.assign("http://www.mazing.com")
+
+    }
+
+</script>
+
+</body>
+</html>
